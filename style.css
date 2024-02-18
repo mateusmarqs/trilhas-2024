@@ -1,0 +1,119 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #000111
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 5%;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #000111;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+h2 {
+    color: #f3b121;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.header {
+    background-color: #f3b121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    width: 100%;
+    margin-bottom: 29px;
+    background-image: url('./images/tires.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    /* background-color: red; */
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid #f3b121;
+    gap: 20px;
+}
+
+
+.image {
+    border-radius: 5px;
+    object-fit: cover;
+    background-position: top;
+}
+
+.infos {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-between;
+ gap: 15px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #e7e7e7;
+}
+
+.date > img {
+    filter: invert(1);
+}
+
+.title {
+    text-align: center;
+    color: #f3b121;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.link {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #f3b121;
+    color: #000111;
+    border: none;
+    width: max-content;
+}
+.link > a {
+    color: #000111;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 32px;
+    }
+}
